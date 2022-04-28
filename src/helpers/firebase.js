@@ -62,13 +62,12 @@ export const userObserver = (setcurrentUser) => {
       });
 }
 
-export const signUpProvider = (navigate) => {
+export const signUpProvider = () => {
     const provider = new GoogleAuthProvider();
     signInWithPopup(auth, provider)
     .then((result) => {
         console.log(result);
         toastSuccessNotify("logged in succesfully")
-        navigate("/");
  
   }).catch((error) => {
  

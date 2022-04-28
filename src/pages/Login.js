@@ -19,7 +19,7 @@ export default function Login() {
   }
 
   const handleProviderLogin = () => {
-    signUpProvider(navigate);
+    signUpProvider();
     navigate("/")
     
   }
