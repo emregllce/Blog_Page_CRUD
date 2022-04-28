@@ -4,8 +4,9 @@ import TextField from "@mui/material/TextField";
 import blok from "../assets/blok.png";
 import google from "../assets/google.png";
 import { useState } from "react";
-import { createUser } from "../helpers/firebase";
+import { createUser,signUpProvider } from "../helpers/firebase";
 import { useNavigate } from "react-router-dom";
+
 
 export default function Register() {
 
@@ -16,6 +17,7 @@ export default function Register() {
   const handleRegister = () =>{
     createUser(email,password,navigate);
   }
+
 
   return (
     <div
@@ -95,21 +97,7 @@ export default function Register() {
         >
           REGISTER
         </button>
-        <button
-          style={{
-            width: "48.5ch",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
-          <span style={{ fontWeight: "700" }}>WITH</span>{" "}
-          <img
-            style={{ width: "70px", marginLeft: "10px" }}
-            src={google}
-            alt=""
-          />
-        </button>
+       
       
       </Box>
     </div>
