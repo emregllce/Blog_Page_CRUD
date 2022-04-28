@@ -1,0 +1,32 @@
+
+.imgContainer{
+    text-align: center;
+}
+
+
+.container{
+    text-align: center;
+    margin-top: 100px;
+}
+.bottomContainer{
+    border: 2px solid black;
+    width: 43rem;
+    margin: auto;
+    border: 4px solid white;
+    padding: 50px 20px 50px 0;
+    line-height: 2.5rem;
+}
+.descText{
+    direction: rtl;
+}
+.coding{
+    width: 30rem;
+    height: auto;
+}
+
+span{
+    cursor: pointer;
+}
+.emre{
+     font-family: Girassol;
+ }
